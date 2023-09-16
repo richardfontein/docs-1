@@ -278,6 +278,11 @@ Example:
     <ResponseField name="suggestEdit" type="boolean" default="false">
     Enables a button to allow users to suggest edits via pull requests
     </ResponseField>
+    <ResponseField name="suggestEditBranch" type="string">
+    Set the git branch to open the suggest edit pull requests against. Default is the configured deploy branch.
+
+    Only relevant when `suggestEdit` is `true`.
+    </ResponseField>
     <ResponseField name="raiseIssue" type="boolean" default="false">
     Enables a button to allow users to raise an issue about the documentation
     </ResponseField>
